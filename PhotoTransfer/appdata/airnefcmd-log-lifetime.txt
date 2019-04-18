@@ -1,0 +1,20 @@
+
+airnef v1.1 - Wireless transfer of images/movies for Nikon cameras [GPL v3]
+Copyright (c) TestCams.com, Time: 04/18/19 15:10:26, Py: 2.7.15, OS: Windows
+
+>> Connection Failed <<
+
+There was no response at 192.168.1.1. Please confirm that your camera's
+Wifi is enabled and that you have specified the correct IP address.
+
+Connection established to 192.168.1.1:15740
+Camera Model "D5300", S/N "4310665"
+Processed info for 568 files/dirs [561 from object cache, 0 previous]
+
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0060.JPG [size = 596,164] in 0.25 seconds (2.27 MB/s)
+
+1 files downloaded in 0.25 seconds (Average Rate = 2.27 MB/s)
+
+>> Terminated by user keypress - cleaning up, please wait... <<
+
+>>>> airnefcmd session over - App Exit Time: 04/18/19 15:11:39
