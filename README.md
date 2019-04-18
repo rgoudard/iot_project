@@ -31,7 +31,7 @@ To achieve this project we used:
 •    One accelerometer
 
 
-Deployement diagram: 
+## Deployement diagram: 
 
 https://ibb.co/q59n395
 
@@ -43,14 +43,14 @@ Our system has 3 or 4 major components depending if we use a micro servo or an I
 
 We finally chose the 3 composants option without the micro servo for performance reasons.
 
-Client:
+## Client:
 
 https://ibb.co/1MnFLSw
 
 The client is equiped with an accelerometer to mesire accelerations from differents axis(X, Y, Z). When a fall occur, those three axis values tend to zero. We have then created a condition on those values. To never miss a fall and try to avoid mistakes, we didn't put 0.0 in the condition but we put a threshold of 0.3. 
 When we detect a fall, we send a Wifi message to the server to the address takephoto/1 .
 
-Server+transmitter IR:
+## Server + transmitter IR:
 
 https://ibb.co/qpCwXZ9
 
@@ -58,14 +58,14 @@ The Wifi server listen to request.
 When a request is received on takephoto/1, we enter the takePhotoLight() function and by digitaly writing on the LED pin, an IR signal is sent to the camera that make it take a picture.
 
 
-Server+Micro servo + IR remote controller:
+## Server + Micro servo + IR remote controller:
 
 https://ibb.co/Gpn1sxk
 
 The wifi server is the same as with the IR transmitter, it is listening to requests.
 When a request is received on takephoto/1, this time we enter the takePhotoMechanical() function which activate a micro servo that push a button on a remote controller who then send an IR signal to the camera and finally take a picture.
 
-Work team schedule:
+## Work team schedule:
 
 https://ibb.co/98gNH8M
 
