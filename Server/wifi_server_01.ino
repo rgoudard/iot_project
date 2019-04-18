@@ -8,14 +8,12 @@
 #include <ESP8266WiFi.h>
 #include <Servo.h>
 
-#include <html_page.h>
-
-byte ledPin = 2;
+//byte ledPin = 2;
 char ssid[] = "goldenboy";               // SSID of your home WiFi
 char pass[] = "ambassadeur";               // password of your home WiFi
 WiFiServer server(80);
 
-const int LEDpin = D3;
+const int LEDIR = D3;
 const int delay_us = 13; // 38 KHz
 int i;
 
@@ -50,12 +48,12 @@ void setup() {
   Serial.print("Signal: "); Serial.println(WiFi.RSSI());
   Serial.print("Networks: "); Serial.println(WiFi.scanNetworks());
 
-  pinMode(LEDpin, OUTPUT);
+  //pinMode(ledPin, OUTPUT);
 
   // Starts the server
   server.begin();
   Serial.println(F("Server started"));
-  pinMode(ledPin, OUTPUT);
+  //pinMode(ledPin, OUTPUT);
 }
 
 void takePhotoMechanical() {
@@ -69,46 +67,76 @@ void takePhotoMechanical() {
 
 void takePhotoLight() {
   for (i = 0; i < 76; i++) {
-    digitalWrite(LEDpin, HIGH);
+    digitalWrite(LEDIR, HIGH);
     delayMicroseconds(delay_us);
-    digitalWrite(LEDpin, LOW);
+    digitalWrite(LEDIR, LOW);
     delayMicroseconds(delay_us);
   }
   delayMicroseconds(27880);
 
   for (i = 0; i < 16; i++) {
-    digitalWrite(LEDpin, HIGH);
+    digitalWrite(LEDIR, HIGH);
     delayMicroseconds(delay_us);
-    digitalWrite(LEDpin, LOW);
+    digitalWrite(LEDIR, LOW);
     delayMicroseconds(delay_us);
   }
 
   delayMicroseconds(1486);
 
   for (i = 0; i < 16; i++) {
-    digitalWrite(LEDpin, HIGH);
+    digitalWrite(LEDIR, HIGH);
     delayMicroseconds(delay_us);
-    digitalWrite(LEDpin, LOW);
+    digitalWrite(LEDIR, LOW);
     delayMicroseconds(delay_us);
   }
 
   delayMicroseconds(3484);
 
   for (i = 0; i < 16; i++) {
-    digitalWrite(LEDpin, HIGH);
+    digitalWrite(LEDIR, HIGH);
     delayMicroseconds(delay_us);
-    digitalWrite(LEDpin, LOW);
+    digitalWrite(LEDIR, LOW);
     delayMicroseconds(delay_us);
   }
+}
+
+String getPage() {
+  String page = "<html lang=fr-FR><head><meta http-equiv='refresh' content='5'/>";
+  page += "<title>ESP8266 Demo - www.projetsdiy.fr</title>";
+  page += "<style> body { background-color: #fffff; font-family: Arial, Helvetica, Sans-Serif; Color: #000088; }</style>";
+  page += "</head><body><h1>Moniteur d'escalade</h1>";
+  page += "<h3>Coordonnees</h3>";
+  page += "<ul><li>X : ";
+  page += x;
+  page += "</li>";
+  page += "<li>Y : ";
+  page += y;
+  page += "</li>";
+  page += "<li>Z : ";
+  page += z;
+  page += "</li></ul><h3>Prendre une photo</h3>";
+  page += "<ul><li> ";
+  page += " mbar</li></ul>";
+  page += "<h3>GPIO</h3>";
+  page += "<form action='/' method='POST'>";
+  page += "<ul><li>D3 (etat: ";
+  page += ")<INPUT type='radio' name='LED' value='1'>ON";
+  page += "<INPUT type='radio' name='LED' value='0'>OFF</li></ul>";
+  page += "<INPUT type='submit' value='Actualiser'>";
+  page += "<br><br><p><a hrf='http://";
+  //page += WiFi.localIP();
+  page += "'>Local IP</p>";
+  page += "</body></html>";
+  return page;
 }
 
 void loop () {
   WiFiClient client = server.available();
   if (client) {
+    Serial.println("Client connected");
     if (client.connected()) {
-      Serial.print("\nclient is connected");
-      Serial.print("client still connected");
-      digitalWrite(ledPin, LOW);  // to show the communication only (inverted logic)
+      Serial.println("client is connected");
+      //digitalWrite(ledPin, LOW);  // to show the communication only (inverted logic)
       String request = client.readStringUntil('\r');    // receives the message from the client
       Serial.print("From client: ");
       Serial.println(request);
@@ -116,11 +144,12 @@ void loop () {
       int val;
       if (request.indexOf(F("/takephoto/1")) != -1) {
         int j = 0;
-        //for ( j = 0; j < 3 ; j++) {
-          takePhotoLight();
-          delay(30);
+        //for ( j = 0; j < 10 ; j++) {
+        takePhotoLight();
         //}
-        Serial.print("taking photo");
+        //takePhotoMechanical();
+        delay(30);
+        Serial.println("taking photo");
       } else if (request.indexOf(F("/gpio/0")) != -1) {
         digitalWrite(LED_BUILTIN, 0);
         delay(500);
@@ -142,14 +171,9 @@ void loop () {
 
       // Set LED according to the request
       digitalWrite(LED_BUILTIN, val);
-
-      /*client.print(F("HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n\r\n<!DOCTYPE HTML>\r\n<html>\r\nPhoto is now "));
-        client.print(F("<br><br>Click <a href='http://"));
-        client.print(WiFi.localIP());
-        client.print(F("/takephoto/1'>here</a> take photo </html>"));*/
-      client.print(getPage());
-      digitalWrite(ledPin, HIGH);
+      //client.print(getPage());
+      //digitalWrite(ledPin, HIGH);
     }
-    //client.stop();                // tarminates the connection with the client
   }
+  client.stop();
 }
