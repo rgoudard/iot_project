@@ -52,7 +52,7 @@ void setup() {
 
   // Starts the server
   server.begin();
-  Serial.println(F("Server started"));
+  Serial.println("Server started");
   //pinMode(ledPin, OUTPUT);
 }
 
@@ -66,6 +66,7 @@ void takePhotoMechanical() {
 }
 
 void takePhotoLight() {
+  digitalWrite(LED_BUILTIN, HIGH);
   for (i = 0; i < 76; i++) {
     digitalWrite(LEDIR, HIGH);
     delayMicroseconds(delay_us);
@@ -98,40 +99,14 @@ void takePhotoLight() {
     digitalWrite(LEDIR, LOW);
     delayMicroseconds(delay_us);
   }
+  digitalWrite(LED_BUILTIN, LOW);
 }
 
-String getPage() {
-  String page = "<html lang=fr-FR><head><meta http-equiv='refresh' content='5'/>";
-  page += "<title>ESP8266 Demo - www.projetsdiy.fr</title>";
-  page += "<style> body { background-color: #fffff; font-family: Arial, Helvetica, Sans-Serif; Color: #000088; }</style>";
-  page += "</head><body><h1>Moniteur d'escalade</h1>";
-  page += "<h3>Coordonnees</h3>";
-  page += "<ul><li>X : ";
-  page += x;
-  page += "</li>";
-  page += "<li>Y : ";
-  page += y;
-  page += "</li>";
-  page += "<li>Z : ";
-  page += z;
-  page += "</li></ul><h3>Prendre une photo</h3>";
-  page += "<ul><li> ";
-  page += " mbar</li></ul>";
-  page += "<h3>GPIO</h3>";
-  page += "<form action='/' method='POST'>";
-  page += "<ul><li>D3 (etat: ";
-  page += ")<INPUT type='radio' name='LED' value='1'>ON";
-  page += "<INPUT type='radio' name='LED' value='0'>OFF</li></ul>";
-  page += "<INPUT type='submit' value='Actualiser'>";
-  page += "<br><br><p><a hrf='http://";
-  //page += WiFi.localIP();
-  page += "'>Local IP</p>";
-  page += "</body></html>";
-  return page;
-}
+WiFiClient client;
 
 void loop () {
-  WiFiClient client = server.available();
+  if(!client)
+    client = server.available();
   if (client) {
     Serial.println("Client connected");
     if (client.connected()) {
@@ -142,38 +117,19 @@ void loop () {
       Serial.println(request);
 
       int val;
-      if (request.indexOf(F("/takephoto/1")) != -1) {
+      if (request.indexOf("/takephoto/1") != -1) {
         int j = 0;
-        //for ( j = 0; j < 10 ; j++) {
-        takePhotoLight();
-        //}
+        for ( j = 0; j < 10 ; j++) {
+          takePhotoLight();
+        }
         //takePhotoMechanical();
-        delay(30);
         Serial.println("taking photo");
-      } else if (request.indexOf(F("/gpio/0")) != -1) {
-        digitalWrite(LED_BUILTIN, 0);
-        delay(500);
-        digitalWrite(LED_BUILTIN, 1);
-        delay(500);
-        digitalWrite(LED_BUILTIN, 0);
-        delay(500);
-        digitalWrite(LED_BUILTIN, 1);
-        delay(500);
-        val = 0;
-
-      } else if (request.indexOf(F("/gpio/1")) != -1) {
-        val = 1;
       } else {
-        Serial.print(F("invalid request: "));
+        Serial.print("invalid request: ");
         Serial.println(request);
-        val = digitalRead(LED_BUILTIN);
       }
-
-      // Set LED according to the request
-      digitalWrite(LED_BUILTIN, val);
-      //client.print(getPage());
-      //digitalWrite(ledPin, HIGH);
+      
+      client.stop();
     }
   }
-  client.stop();
 }
