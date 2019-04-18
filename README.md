@@ -1,10 +1,10 @@
 # iot_project
 
-Project scope
+## Project scope
 
 Our project aims to take picture from a Nikon D5300 whenever someone who wear our captor fall. 
 
-Used materials
+## Used materials
 
 To achieve this project we used: 
 
