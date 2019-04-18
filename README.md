@@ -10,15 +10,25 @@ Matériels Utilisé
 Pour réaliser ce projet nous avons eu besoin :
 
 •    D'un appareil photo de la marque Nikon, modèle 5300.
+
 •    D'une télécommande IR
+
 •    Deux Wemos
+
 •    Deux batteries externes
+
 •    Un Cerveau Moteur SG90
+
 •    Une résistance
+
 •    Un transistor
+
 •    Une breadboard
+
 •    Un émetteur IR
+
 •    Un récepteur IR
+
 •    Un accéléromètre
 
 
