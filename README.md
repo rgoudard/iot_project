@@ -45,10 +45,10 @@ We finally chose the 3 composants option without the micro servo for performance
 
 ## Client:
 schema:
-![schema](https://ibb.co/1MnFLSw)
+![schema](https://i.ibb.co/JqdDKhM/image02.png)
 
 picture:
-![picture](https://ibb.co/gwjRPLk)
+![picture](https://i.ibb.co/S5XzFFG/DSC-0108.jpg)
 
 
 The client is equiped with an accelerometer to mesire accelerations from differents axis(X, Y, Z). When a fall occur, those three axis values tend to zero. We have then created a condition on those values. To never miss a fall and try to avoid mistakes, we didn't put 0.0 in the condition but we put a threshold of 0.3. 
