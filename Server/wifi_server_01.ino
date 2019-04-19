@@ -71,10 +71,7 @@ void loop () {
       int val;
       //filter the client request
       if (request.indexOf("/takephoto/1") != -1) { 
-        int j = 0;
-        for ( j = 0; j < 3 ; j++) { // send multiple signal 
-          takePhotoMechanical();
-        }
+        takePhotoMechanical();
         Serial.println("taking photo");
       } else {
         Serial.print("invalid request: ");
