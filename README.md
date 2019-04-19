@@ -73,7 +73,7 @@ We finally chose the 3 composants option without the micro servo for performance
 
 ## Client:
 schema:
-![](https://i.ibb.co/k5nJmZz/image02.png)
+![](https://files.slack.com/files-pri/T361AN0CE-FJ3JX9XAA/image.png)
 
 picture:
 ![](https://i.ibb.co/Y8RLyFH/DSC-0100.jpg)
@@ -84,7 +84,7 @@ When we detect a fall, we send a Wifi message to the server to the address takep
 
 ## Server + transmitter IR:
 schema:
-![schema](https://i.ibb.co/bXFnqfL/image01.png)
+![schema](https://files.slack.com/files-pri/T361AN0CE-FHV5N2LU9/image.png)
 
 picture:
 ![picture](https://i.ibb.co/2SWD4g3/DSC-0106.jpg)
@@ -95,7 +95,7 @@ When a request is received on takephoto/1, we enter the takePhotoLight() functio
 
 ## Server + Micro servo + IR remote controller:
 schema:
-![](https://i.ibb.co/YQPKDR8/image.png)
+![](https://files.slack.com/files-pri/T361AN0CE-FJ1CUQ3TP/image.png)
 
 picture:
 ![](https://i.ibb.co/S5XzFFG/DSC-0108.jpg)
