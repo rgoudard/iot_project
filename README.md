@@ -8,7 +8,7 @@ Our project aims to take picture from a Nikon D5300 whenever someone who wear ou
 
 To achieve this project we used: 
 
-•    A camera Nikon, model 5300.
+•    A camera [Nikon, model 5300](https://www.nikon.fr/fr_FR/product/digital-cameras/slr/consumer/d5300-black).
 
 •    An InfraRed remote control
 
