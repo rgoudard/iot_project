@@ -33,25 +33,31 @@ To achieve this project we used:
 
 ## Used library:
 
-Client :
+# Client :
   
   •    <MPU6050_tockn.h>    -> library for easy communication with the [MPU6050](https://www.amazon.fr/Capteur-MPU-6050-Module-analogique-acc%C3%A9l%C3%A9rom%C3%A8tre/dp/B00E1EQXL6).
+  
   •    <Wire.h>             -> This library allows you to communicate with I2C / TWI devices.
+  
   •    <SPI.h>              -> Serial Peripheral Interface (SPI) is a synchronous serial data protocol used by microcontrollers for communication.
+  
   •    <ESP8266WiFi.h>      -> If you are eager to connect your new ESP8266 module to Wi-Fi network to start sending and receiving data.
 
-Server :
+# Server :
 
   •    <SPI.h>              -> Serial Peripheral Interface (SPI) is a synchronous serial data protocol used by microcontrollers for communication.
+  
   •    <ESP8266WiFi.h>      -> If you are eager to connect your new ESP8266 module to Wi-Fi network to start sending and receiving data.
+  
   •    <Servo.h>            -> This library allows an Arduino board to control RC (hobby) servo motors.
 
-Python :
+# Python :
   
   •    Airnef
+  
   •    FTPLib
 
-Cloud :
+# Cloud :
 
   Html / CSS / PHP / OVH
 
