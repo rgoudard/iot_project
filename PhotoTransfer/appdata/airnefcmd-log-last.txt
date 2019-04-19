@@ -1,0 +1,152 @@
+
+airnef v1.1 - Wireless transfer of images/movies for Nikon cameras [GPL v3]
+Copyright (c) TestCams.com, Time: 04/19/19 14:09:45, Py: 2.7.15, OS: Windows
+
+>> Connection Failed <<
+
+There was no response at 192.168.1.1. Please confirm that your camera's
+Wifi is enabled and that you have specified the correct IP address.
+
+Connection established to 192.168.1.1:15740
+Camera Model "D5300", S/N "4310665"
+Non-I/O error reading obj hash from D:\git\esgi\IOT\iot_project\PhotoTransfer\appdata\D5300-SN4310665-objinfocache. Cache will be discarded. (err=<type 'exceptions.ImportError'>)
+Processed info for 510 files/dirs [0 from object cache, 0 previous]
+
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0001.JPG [size = 563,840] in 0.30 seconds (1.79 MB/s)
+
+1 files downloaded in 0.30 seconds (Average Rate = 1.79 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0002.JPG [size = 546,597] in 0.24 seconds (2.21 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0003.JPG [size = 565,637] in 0.32 seconds (1.71 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0004.JPG [size = 608,649] in 0.24 seconds (2.38 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0005.JPG [size = 624,642] in 0.30 seconds (2.01 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0006.JPG [size = 633,219] in 0.27 seconds (2.22 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0007.JPG [size = 609,336] in 0.31 seconds (1.89 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0008.JPG [size = 628,350] in 0.29 seconds (2.05 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0009.JPG [size = 604,477] in 0.31 seconds (1.85 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0010.JPG [size = 597,849] in 0.33 seconds (1.74 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0011.JPG [size = 632,549] in 0.34 seconds (1.77 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0012.JPG [size = 641,790] in 0.40 seconds (1.55 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0013.JPG [size = 627,698] in 0.36 seconds (1.64 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0014.JPG [size = 628,616] in 0.34 seconds (1.76 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0015.JPG [size = 623,631] in 0.32 seconds (1.88 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0016.JPG [size = 601,266] in 0.27 seconds (2.14 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0017.JPG [size = 565,800] in 0.36 seconds (1.48 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0018.JPG [size = 568,156] in 0.36 seconds (1.49 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0019.JPG [size = 565,919] in 0.27 seconds (1.98 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0020.JPG [size = 562,748] in 0.27 seconds (2.00 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0021.JPG [size = 837,430] in 0.48 seconds (1.68 MB/s)
+MTP_OP_NkonGetEvent: Socket error, partial data received - 0x0 of 0x0 bytes for specific payload, 0x0 of 0x0 of total data bytes expected. Error: timed out
+
+>> Connection Failed <<
+
+There was no response at 192.168.1.1. Please confirm that your camera's
+Wifi is enabled and that you have specified the correct IP address.
+
+Connection established to 192.168.1.1:15740
+Camera Model "D5300", S/N "4310665"
+Processed info for 541 files/dirs [0 from object cache, 530 previous]
+
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0022.JPG [size = 763,301] in 0.38 seconds (1.90 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0023.JPG [size = 747,140] in 0.41 seconds (1.73 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0024.JPG [size = 756,631] in 0.33 seconds (2.20 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0025.JPG [size = 853,644] in 0.41 seconds (1.98 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0026.JPG [size = 673,824] in 0.39 seconds (1.64 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0027.JPG [size = 644,799] in 0.30 seconds (2.08 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0028.JPG [size = 615,541] in 0.32 seconds (1.81 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0029.JPG [size = 562,586] in 0.30 seconds (1.76 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0030.JPG [size = 555,681] in 0.27 seconds (1.95 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0031.JPG [size = 572,759] in 0.26 seconds (2.13 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0032.JPG [size = 561,682] in 0.24 seconds (2.27 MB/s)
+
+31 files downloaded in 9.99 seconds (Average Rate = 1.87 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0033.JPG [size = 483,149] in 0.25 seconds (1.84 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0034.JPG [size = 472,008] in 0.24 seconds (1.88 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0035.JPG [size = 554,641] in 0.23 seconds (2.28 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0036.JPG [size = 725,604] in 0.36 seconds (1.92 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0037.JPG [size = 718,547] in 0.33 seconds (2.06 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0038.JPG [size = 721,188] in 0.34 seconds (2.03 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0039.JPG [size = 705,018] in 0.36 seconds (1.85 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0040.JPG [size = 754,056] in 0.39 seconds (1.83 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0041.JPG [size = 754,964] in 0.37 seconds (1.94 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0042.JPG [size = 748,723] in 0.44 seconds (1.62 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0043.JPG [size = 741,106] in 0.32 seconds (2.18 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0044.JPG [size = 707,957] in 0.28 seconds (2.45 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0045.JPG [size = 717,086] in 0.29 seconds (2.34 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0046.JPG [size = 725,712] in 0.32 seconds (2.19 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0047.JPG [size = 734,242] in 0.34 seconds (2.04 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0048.JPG [size = 704,988] in 0.69 seconds (0.97 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0049.JPG [size = 701,296] in 0.40 seconds (1.66 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0050.JPG [size = 710,001] in 0.48 seconds (1.42 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0051.JPG [size = 698,943] in 0.56 seconds (1.18 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0052.JPG [size = 725,166] in 0.30 seconds (2.27 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0053.JPG [size = 717,846] in 0.32 seconds (2.14 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0054.JPG [size = 754,185] in 0.38 seconds (1.87 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0055.JPG [size = 783,308] in 0.33 seconds (2.25 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0056.JPG [size = 812,812] in 0.38 seconds (2.04 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0057.JPG [size = 836,383] in 0.42 seconds (1.92 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0058.JPG [size = 842,121] in 0.43 seconds (1.88 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0059.JPG [size = 842,328] in 0.37 seconds (2.18 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0060.JPG [size = 856,213] in 0.38 seconds (2.17 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0061.JPG [size = 845,922] in 0.36 seconds (2.22 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0062.JPG [size = 827,865] in 0.36 seconds (2.20 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0063.JPG [size = 793,156] in 0.49 seconds (1.54 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0064.JPG [size = 823,484] in 0.34 seconds (2.34 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0065.JPG [size = 774,302] in 0.38 seconds (1.92 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0066.JPG [size = 752,239] in 0.32 seconds (2.27 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0067.JPG [size = 790,255] in 0.61 seconds (1.23 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0068.JPG [size = 847,499] in 0.37 seconds (2.20 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0069.JPG [size = 880,987] in 0.35 seconds (2.39 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0070.JPG [size = 895,304] in 0.45 seconds (1.89 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0071.JPG [size = 853,432] in 0.44 seconds (1.87 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0072.JPG [size = 895,344] in 0.44 seconds (1.94 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0073.JPG [size = 871,607] in 0.35 seconds (2.39 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0074.JPG [size = 842,305] in 0.36 seconds (2.23 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0075.JPG [size = 825,945] in 0.32 seconds (2.46 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0076.JPG [size = 818,656] in 0.34 seconds (2.30 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0077.JPG [size = 798,012] in 0.32 seconds (2.38 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0078.JPG [size = 684,911] in 0.33 seconds (1.99 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0079.JPG [size = 683,978] in 0.32 seconds (2.01 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0080.JPG [size = 718,773] in 0.32 seconds (2.14 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0081.JPG [size = 717,018] in 0.36 seconds (1.93 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0082.JPG [size = 720,832] in 0.33 seconds (2.10 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0083.JPG [size = 724,240] in 0.33 seconds (2.08 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0084.JPG [size = 736,330] in 0.30 seconds (2.34 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0085.JPG [size = 739,050] in 0.45 seconds (1.56 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0086.JPG [size = 755,526] in 0.41 seconds (1.77 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0087.JPG [size = 745,173] in 0.36 seconds (1.95 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0088.JPG [size = 706,749] in 0.35 seconds (1.94 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0089.JPG [size = 710,132] in 0.28 seconds (2.43 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0090.JPG [size = 713,577] in 0.39 seconds (1.75 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0091.JPG [size = 709,491] in 0.34 seconds (1.97 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0092.JPG [size = 715,837] in 0.80 seconds (0.85 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0093.JPG [size = 708,257] in 0.55 seconds (1.23 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0094.JPG [size = 605,551] in 0.24 seconds (2.45 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0095.JPG [size = 531,101] in 0.35 seconds (1.44 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0096.JPG [size = 445,659] in 0.24 seconds (1.77 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0097.JPG [size = 442,169] in 0.24 seconds (1.73 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0098.JPG [size = 431,198] in 0.21 seconds (1.94 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0099.JPG [size = 481,114] in 0.22 seconds (2.09 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0100.JPG [size = 496,470] in 0.22 seconds (2.19 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0101.JPG [size = 453,532] in 0.68 seconds (0.63 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0102.JPG [size = 441,950] in 0.19 seconds (2.20 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0103.JPG [size = 506,095] in 0.23 seconds (2.13 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0104.JPG [size = 499,796] in 0.22 seconds (2.13 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0105.JPG [size = 489,168] in 0.28 seconds (1.64 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0106.JPG [size = 494,891] in 0.19 seconds (2.42 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0107.JPG [size = 500,162] in 0.24 seconds (1.99 MB/s)
+D:\git\esgi\IOT\iot_project\PhotoTransfer\outputs\DSC_0108.JPG [size = 520,619] in 0.27 seconds (1.83 MB/s)
+MTP_OP_NkonGetEvent: Socket error, partial data received - 0x0 of 0x0 bytes for specific payload, 0x0 of 0x0 of total data bytes expected. Error: timed out
+
+>> Connection Failed <<
+
+Could not open socket: [Errno 10053] Une connexion établie a été abandonnée par un logiciel de votre ordinateur hôte
+
+>> Connection Failed <<
+
+There was no response at 192.168.1.1. Please confirm that your camera's
+Wifi is enabled and that you have specified the correct IP address.
+
+
+>> Terminated by user keypress <<
+
+>>>> airnefcmd session over - App Exit Time: 04/19/19 14:21:55
