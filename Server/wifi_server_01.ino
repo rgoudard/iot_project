@@ -8,7 +8,6 @@
 #include <ESP8266WiFi.h>
 #include <Servo.h>
 
-//byte ledPin = 2;
 char ssid[] = "goldenboy";               // SSID of your home WiFi
 char pass[] = "ambassadeur";               // password of your home WiFi
 WiFiServer server(80);
@@ -49,7 +48,6 @@ void setup() {
   // Starts the server
   server.begin();
   Serial.println("Server started");
-  //pinMode(ledPin, OUTPUT);
 }
 
 //Moves servomotor to activate the remote control
