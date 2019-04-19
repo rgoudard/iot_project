@@ -114,7 +114,7 @@ To make it work, we first tried to take a photo and retreive it wia the Wifi net
 
 So we tried to retro ingeneere a C# code but it also didn't worked, the code version wasn't compatible with our camera model. But, at least we succeeded in retreiving some signal codes.
 
-We then tried to reproduce the InfraRed signal that remote controllers produce with an IR transmitter by analysing it with an oscilloscope.
+We then tried to reproduce the InfraRed signal that remote controllers produce with an IR transmitter by analysing it with an logic analyzer.
 
 ![](https://i.ibb.co/PzdNnfj/Screenshot-from-2019-04-17-18-09-41.png)
 
