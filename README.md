@@ -33,7 +33,7 @@ To achieve this project we used:
 
 ## Deployement diagram: 
 
-![alt text](https://ibb.co/rp585g1)
+![](https://i.ibb.co/qgmqmzP/diagramme-deploiement.png)
 
 Our system has 3 or 4 major components depending if we use a micro servo or an IR transmitter: 
   - The client send a signal whenever someone fall.
@@ -45,10 +45,10 @@ We finally chose the 3 composants option without the micro servo for performance
 
 ## Client:
 schema:
-![schema](https://i.ibb.co/JqdDKhM/image02.png)
+![](https://i.ibb.co/Y8RLyFH/DSC-0100.jpg)
 
 picture:
-![picture](https://i.ibb.co/S5XzFFG/DSC-0108.jpg)
+![](https://i.ibb.co/S5XzFFG/DSC-0108.jpg)
 
 
 The client is equiped with an accelerometer to mesire accelerations from differents axis(X, Y, Z). When a fall occur, those three axis values tend to zero. We have then created a condition on those values. To never miss a fall and try to avoid mistakes, we didn't put 0.0 in the condition but we put a threshold of 0.3. 
@@ -67,17 +67,17 @@ When a request is received on takephoto/1, we enter the takePhotoLight() functio
 
 ## Server + Micro servo + IR remote controller:
 schema:
-![schema](https://ibb.co/Gpn1sxk)
+![](https://i.ibb.co/YQPKDR8/image.png)
 
 picture:
-![picture](https://ibb.co/ydnrHH7)
+![](https://i.ibb.co/S5XzFFG/DSC-0108.jpg)
 
 The wifi server is the same as with the IR transmitter, it is listening to requests.
 When a request is received on takephoto/1, this time we enter the takePhotoMechanical() function which activate a micro servo that push a button on a remote controller who then send an IR signal to the camera and finally take a picture.
 
 ## Work team schedule:
 
-![Work team schedule](https://ibb.co/98gNH8M)
+![](https://i.ibb.co/vwqH4wt/Capture.png)
 
 
 To make it work, we first tried to take a photo and retreive it wia the Wifi network of the camera, so we tried to retro engeneere the APK but it was too complex and we decided to move on to sometinh else.
@@ -86,7 +86,7 @@ So we tried to retro ingeneere a C# code but it also didn't worked, the code ver
 
 We then tried to reproduce the InfraRed signal that remote controllers produce with an IR transmitter by analysing it with an oscilloscope.
 
-![Oscilloscope](https://ibb.co/98gNH8M)
+![](https://i.ibb.co/PzdNnfj/Screenshot-from-2019-04-17-18-09-41.png)
 
 First we tried to make it work with 5V but intensity was too high and the LED burned, so we went for the 3V alimentation but it was not enough to power it. So we had variation on the signal and it wasn't working. To make it work we had to use a transistor and a resistance to have a correct signal by boosting the 3V.
 
