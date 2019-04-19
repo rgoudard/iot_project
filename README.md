@@ -86,10 +86,10 @@ When we detect a fall, we send a Wifi message to the server to the address takep
 
 ## Server + transmitter IR:
 schema:
-![schema](https://ibb.co/qpCwXZ9)
+![schema](https://i.ibb.co/bXFnqfL/image01.png)
 
 picture:
-![picture](https://ibb.co/cwkGnDh)
+![picture](https://i.ibb.co/2SWD4g3/DSC-0106.jpg)
 
 The Wifi server listen to request. 
 When a request is received on takephoto/1, we enter the takePhotoLight() function and by digitaly writing on the LED pin, an IR signal is sent to the camera that make it take a picture.
