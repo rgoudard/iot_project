@@ -131,3 +131,5 @@ To do that, the python server need to be connected to internet and the Camera Wi
 ## Cloud:
 
 After being download, pictures are send by FTP to the OVH server. Pictures are display on http://draweverythinggame.com/
+
+If you want to reproduce this project for free, you can remove the python code that does the uploading: python airnefcmd.py --outputdir="./outputs" --realtimedownload="only" --downloadexec pictures will be download on the directory output. After that you can host them in a locally setted website. For more simplicity you can search for a portfolio template.
