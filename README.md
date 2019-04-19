@@ -45,10 +45,10 @@ We finally chose the 3 composants option without the micro servo for performance
 
 ## Client:
 schema:
-![](https://i.ibb.co/Y8RLyFH/DSC-0100.jpg)
+![](https://i.ibb.co/k5nJmZz/image02.png)
 
 picture:
-![](https://i.ibb.co/S5XzFFG/DSC-0108.jpg)
+![](https://i.ibb.co/Y8RLyFH/DSC-0100.jpg)
 
 
 The client is equiped with an accelerometer to mesire accelerations from differents axis(X, Y, Z). When a fall occur, those three axis values tend to zero. We have then created a condition on those values. To never miss a fall and try to avoid mistakes, we didn't put 0.0 in the condition but we put a threshold of 0.3. 
@@ -95,6 +95,8 @@ We then tried the micro servo to activate a remote controller via a mechanical p
 The two Wemos are communicating via Wifi, whenever the accelerometer is in freefall, a request is passed to the server that send multiple IR signals via the transmitter and the camera take pictures.
 
 A python server retreive the pictures from the camera Wifi network and send it to a website in the cloud.
+
+here : http://draweverythinggame.com/
 
 
  
