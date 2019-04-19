@@ -10,26 +10,23 @@ To achieve this project we used:
 
 •    A camera [Nikon, model 5300](https://www.nikon.fr/fr_FR/product/digital-cameras/slr/consumer/d5300-black).
 
-•    An InfraRed remote control
+•    An [InfraRed remote control](https://www.fnac.com/Nikon-telecommande-ML-L3/a1801482/w-4)
 
-•    Two Wemos R1D1mini
+•    Two [Wemos R1D1mini](https://www.banggood.com/WeMos-D1-Mini-V2-NodeMcu-4M-Bytes-Lua-WIFI-Internet-Of-Things-Development-Board-Based-ESP8266-p-1115398.html?cur_warehouse=CN)
 
-•    Two externals batteries
+•    Two externals batteries 
 
-•    One micro servo SG90
+•    One [micro servo SG90](https://boutique.semageek.com/fr/104-micro-servo-tower-pro-sg90.html)
 
 •    One resistance
 
 •    One transitor
 
-•    One breadboard
+•    One [breadboard](https://www.amazon.fr/breadboard/s?k=breadboard)
 
-•    One InfraRed transmitter
+•    One [InfraRed transmitter](https://www.makerfabs.com/IR-Transmitter.html)
 
-•    One InfraRed receptor
-
-•    One accelerometer
-
+•    One [accelerometer](https://shop.mchobby.be/fr/breakout/127-accelerometre-3-axes-sortie-analogique--3232100001275-adafruit.html)
 
 ## Used library:
 
