@@ -15,7 +15,7 @@ To achieve this project we used:
 
 •    Two [Wemos R1D1mini](https://www.banggood.com/WeMos-D1-Mini-V2-NodeMcu-4M-Bytes-Lua-WIFI-Internet-Of-Things-Development-Board-Based-ESP8266-p-1115398.html?cur_warehouse=CN)
 
-•    Two externals batteries 
+•    Two externals batteries with 5V output
 
 •    One [micro servo SG90](https://boutique.semageek.com/fr/104-micro-servo-tower-pro-sg90.html)
 
