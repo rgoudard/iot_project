@@ -2,7 +2,7 @@
 
 ## Project scope
 
-Our project aims to take picture from a Nikon D5300 whenever someone who wear our captor fall. 
+Our project aims to take picture from a Nikon D5300 whenever someone who wears our sensor falls. 
 
 ## Used materials
 
@@ -53,7 +53,7 @@ To achieve this project we used:
 
 ### Python :
   
-  •    Airnef [Open Source project](http://www.testcams.com/airnef/)
+  •    Airnef ([Open Source project](http://www.testcams.com/airnef/))
   
   •    FTPLib
 
