@@ -33,7 +33,7 @@ To achieve this project we used:
 
 ## Deployement diagram: 
 
-https://ibb.co/q59n395
+https://ibb.co/rp585g1
 
 Our system has 3 or 4 major components depending if we use a micro servo or an IR transmitter: 
   - The client send a signal whenever someone fall.
