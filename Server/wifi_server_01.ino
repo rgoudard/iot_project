@@ -12,11 +12,6 @@ char ssid[] = "goldenboy";               // SSID of your home WiFi
 char pass[] = "ambassadeur";               // password of your home WiFi
 WiFiServer server(80);
 
-//IR LED configuration
-const int LEDIR = D3;
-const int delay_us = 13; // 38 KHz
-int i;
-
 IPAddress ip(192, 168, 43, 58);            // IP address of the server
 IPAddress gateway(192, 168, 43, 129);        // gateway of your network
 IPAddress subnet(255, 255, 255, 0);       // subnet mask of your network
@@ -60,44 +55,6 @@ void takePhotoMechanical() {
   }
 }
 
-//Sends infrared signal to the LED
-void takePhotoLight() {
-  digitalWrite(LED_BUILTIN, HIGH);
-  for (i = 0; i < 76; i++) {
-    digitalWrite(LEDIR, HIGH);
-    delayMicroseconds(delay_us);
-    digitalWrite(LEDIR, LOW);
-    delayMicroseconds(delay_us);
-  }
-  delayMicroseconds(27880);
-
-  for (i = 0; i < 16; i++) {
-    digitalWrite(LEDIR, HIGH);
-    delayMicroseconds(delay_us);
-    digitalWrite(LEDIR, LOW);
-    delayMicroseconds(delay_us);
-  }
-
-  delayMicroseconds(1486);
-
-  for (i = 0; i < 16; i++) {
-    digitalWrite(LEDIR, HIGH);
-    delayMicroseconds(delay_us);
-    digitalWrite(LEDIR, LOW);
-    delayMicroseconds(delay_us);
-  }
-
-  delayMicroseconds(3484);
-
-  for (i = 0; i < 16; i++) {
-    digitalWrite(LEDIR, HIGH);
-    delayMicroseconds(delay_us);
-    digitalWrite(LEDIR, LOW);
-    delayMicroseconds(delay_us);
-  }
-  digitalWrite(LED_BUILTIN, LOW);
-}
-
 WiFiClient client;
 
 void loop () {
@@ -115,8 +72,8 @@ void loop () {
       //filter the client request
       if (request.indexOf("/takephoto/1") != -1) { 
         int j = 0;
-        for ( j = 0; j < 10 ; j++) { // send multiple signal 
-          takePhotoLight();
+        for ( j = 0; j < 3 ; j++) { // send multiple signal 
+          takePhotoMechanical();
         }
         Serial.println("taking photo");
       } else {
