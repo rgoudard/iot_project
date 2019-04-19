@@ -31,6 +31,30 @@ To achieve this project we used:
 •    One accelerometer
 
 
+## Used library:
+
+Client :
+  
+  •    <MPU6050_tockn.h>    -> library for easy communication with the [MPU6050](https://www.amazon.fr/Capteur-MPU-6050-Module-analogique-acc%C3%A9l%C3%A9rom%C3%A8tre/dp/B00E1EQXL6).
+  •    <Wire.h>             -> This library allows you to communicate with I2C / TWI devices.
+  •    <SPI.h>              -> Serial Peripheral Interface (SPI) is a synchronous serial data protocol used by microcontrollers for communication.
+  •    <ESP8266WiFi.h>      -> If you are eager to connect your new ESP8266 module to Wi-Fi network to start sending and receiving data.
+
+Server :
+
+  •    <SPI.h>              -> Serial Peripheral Interface (SPI) is a synchronous serial data protocol used by microcontrollers for communication.
+  •    <ESP8266WiFi.h>      -> If you are eager to connect your new ESP8266 module to Wi-Fi network to start sending and receiving data.
+  •    <Servo.h>            -> This library allows an Arduino board to control RC (hobby) servo motors.
+
+Python :
+  
+  •    Airnef
+  •    FTPLib
+
+Cloud :
+
+  Html / CSS / PHP / OVH
+
 ## Deployement diagram: 
 
 ![](https://i.ibb.co/qgmqmzP/diagramme-deploiement.png)
@@ -96,7 +120,10 @@ The two Wemos are communicating via Wifi, whenever the accelerometer is in freef
 
 A python server retreive the pictures from the camera Wifi network and send it to a website in the cloud.
 
-here : http://draweverythinggame.com/
+To do that, the python server need to be connected to internet and the Camera Wifi. To launch this service you need to go in the PhotoTransfer directory then type in your console :
 
+`python airnefcmd.py --outputdir="./outputs" --realtimedownload="only" --downloadexec python ./ftpUpload.py @pf@ @filename@ [FTP_HOST] [FTP_USER] [FTP_PASSWORD] [FTP_DESTINATION]`
 
- 
+## Cloud:
+
+After being download, pictures are send by FTP to the OVH server. Pictures are display on http://draweverythinggame.com/
