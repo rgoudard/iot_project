@@ -45,18 +45,21 @@ We finally chose the 3 composants option without the micro servo for performance
 
 ## Client:
 schema:
-https://ibb.co/1MnFLSw
+![schema](https://ibb.co/1MnFLSw)
+
 picture:
-https://ibb.co/gwjRPLk
+![picture](https://ibb.co/gwjRPLk)
+
 
 The client is equiped with an accelerometer to mesire accelerations from differents axis(X, Y, Z). When a fall occur, those three axis values tend to zero. We have then created a condition on those values. To never miss a fall and try to avoid mistakes, we didn't put 0.0 in the condition but we put a threshold of 0.3. 
 When we detect a fall, we send a Wifi message to the server to the address takephoto/1 .
 
 ## Server + transmitter IR:
 schema:
-https://ibb.co/qpCwXZ9
+![schema](https://ibb.co/qpCwXZ9)
+
 picture:
-https://ibb.co/cwkGnDh
+![picture](https://ibb.co/cwkGnDh)
 
 The Wifi server listen to request. 
 When a request is received on takephoto/1, we enter the takePhotoLight() function and by digitaly writing on the LED pin, an IR signal is sent to the camera that make it take a picture.
@@ -64,16 +67,17 @@ When a request is received on takephoto/1, we enter the takePhotoLight() functio
 
 ## Server + Micro servo + IR remote controller:
 schema:
-https://ibb.co/Gpn1sxk
+![schema](https://ibb.co/Gpn1sxk)
+
 picture:
-https://ibb.co/ydnrHH7
+![picture](https://ibb.co/ydnrHH7)
 
 The wifi server is the same as with the IR transmitter, it is listening to requests.
 When a request is received on takephoto/1, this time we enter the takePhotoMechanical() function which activate a micro servo that push a button on a remote controller who then send an IR signal to the camera and finally take a picture.
 
 ## Work team schedule:
 
-https://ibb.co/98gNH8M
+![Work team schedule](https://ibb.co/98gNH8M)
 
 
 To make it work, we first tried to take a photo and retreive it wia the Wifi network of the camera, so we tried to retro engeneere the APK but it was too complex and we decided to move on to sometinh else.
@@ -81,6 +85,8 @@ To make it work, we first tried to take a photo and retreive it wia the Wifi net
 So we tried to retro ingeneere a C# code but it also didn't worked, the code version wasn't compatible with our camera model. But, at least we succeeded in retreiving some signal codes.
 
 We then tried to reproduce the InfraRed signal that remote controllers produce with an IR transmitter by analysing it with an oscilloscope.
+
+![Oscilloscope](https://ibb.co/98gNH8M)
 
 First we tried to make it work with 5V but intensity was too high and the LED burned, so we went for the 3V alimentation but it was not enough to power it. So we had variation on the signal and it wasn't working. To make it work we had to use a transistor and a resistance to have a correct signal by boosting the 3V.
 
