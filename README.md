@@ -15,7 +15,7 @@ To achieve this project we used:
 
 •    Two [Wemos R1D1mini](https://www.banggood.com/WeMos-D1-Mini-V2-NodeMcu-4M-Bytes-Lua-WIFI-Internet-Of-Things-Development-Board-Based-ESP8266-p-1115398.html?cur_warehouse=CN)
 
-•    Two externals batteries with 5V output
+•    Two externals batteries 
 
 •    One [micro servo SG90](https://boutique.semageek.com/fr/104-micro-servo-tower-pro-sg90.html)
 
@@ -73,7 +73,7 @@ We finally chose the 3 composants option without the micro servo for performance
 
 ## Client:
 schema:
-![](https://i.ibb.co/k5nJmZz/image02.png)
+![](https://i.ibb.co/Qj3dfhz/image.png)
 
 picture:
 ![](https://i.ibb.co/Y8RLyFH/DSC-0100.jpg)
@@ -84,7 +84,7 @@ When we detect a fall, we send a Wifi message to the server to the address takep
 
 ## Server + transmitter IR:
 schema:
-![schema](https://i.ibb.co/bXFnqfL/image01.png)
+![schema](https://i.ibb.co/HXcB1Q3/imageIR.png)
 
 picture:
 ![picture](https://i.ibb.co/2SWD4g3/DSC-0106.jpg)
@@ -95,15 +95,13 @@ When a request is received on takephoto/1, we enter the takePhotoLight() functio
 
 ## Server + Micro servo + IR remote controller:
 schema:
-![](https://i.ibb.co/YQPKDR8/image.png)
+![](https://i.ibb.co/G2zsdQb/imageservo.png)
 
 picture:
 ![](https://i.ibb.co/S5XzFFG/DSC-0108.jpg)
 
 The wifi server is the same as with the IR transmitter, it is listening to requests.
 When a request is received on takephoto/1, this time we enter the takePhotoMechanical() function which activate a micro servo that push a button on a remote controller who then send an IR signal to the camera and finally take a picture.
-
-If you want to know more about it, check out this [link](https://www.christidis.info/index.php/personal-projects/arduino-nikon-infrared-command-code)
 
 ## Work team schedule:
 
@@ -133,8 +131,3 @@ To do that, the python server need to be connected to internet and the Camera Wi
 ## Cloud:
 
 After being download, pictures are send by FTP to the OVH server. Pictures are display on http://draweverythinggame.com/
-
-If you want to reprodu ce this project for free, you can remove the python code that does the uploading: 
-`python airnefcmd.py --outputdir="./outputs" --realtimedownload="only" --downloadexec`
-pictures will be download on the directory output. After that you can host them in a locally setted website.
-For more simplicity you can search for a portfolio template.
