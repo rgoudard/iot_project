@@ -63,7 +63,7 @@ To achieve this project we used:
 
 ## Deployement diagram: 
 
-![](https://i.ibb.co/qgmqmzP/diagramme-deploiement.png)
+![](https://i.ibb.co/wcF8Q9W/diagramme-deploiement.png)
 
 Our system has 3 or 4 major components depending if we use a micro servo or an IR transmitter: 
   - The client send a signal whenever someone fall.
