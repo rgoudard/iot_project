@@ -2,7 +2,8 @@
 
 ## Project scope
 
-Our project aims to take picture from a Nikon D5300 whenever someone who wears our sensor falls. 
+Our project aims to take picture from a Nikon D5300 whenever someone who wears our sensor falls (while climbing for example).
+We are using an accelerometer to "catch" falls or any fast movements, so we could also take photo of a balls throwed or something else, sky's the limit.
 
 ## Used materials
 
