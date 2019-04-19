@@ -13,6 +13,7 @@ char ssid[] = "goldenboy";               // SSID of your home WiFi
 char pass[] = "ambassadeur";               // password of your home WiFi
 WiFiServer server(80);
 
+//IR LED configuration
 const int LEDIR = D3;
 const int delay_us = 13; // 38 KHz
 int i;
@@ -20,9 +21,6 @@ int i;
 IPAddress ip(192, 168, 43, 58);            // IP address of the server
 IPAddress gateway(192, 168, 43, 129);        // gateway of your network
 IPAddress subnet(255, 255, 255, 0);       // subnet mask of your network
-float   x = 0 ;
-float   y = 0 ;
-float   z = 0;
 
 Servo myservo; // create servo object to control a servo
 
@@ -35,7 +33,7 @@ void setup() {
 
   WiFi.config(ip, gateway, subnet);       // forces to use the fix IP
   WiFi.begin(ssid, pass);                 // connects to the WiFi router
-  while (WiFi.status() != WL_CONNECTED) {
+  while (WiFi.status() != WL_CONNECTED) { // print "." until connected to wifi
     delay(50);
     Serial.print(".");
   }
@@ -48,14 +46,13 @@ void setup() {
   Serial.print("Signal: "); Serial.println(WiFi.RSSI());
   Serial.print("Networks: "); Serial.println(WiFi.scanNetworks());
 
-  //pinMode(ledPin, OUTPUT);
-
   // Starts the server
   server.begin();
   Serial.println("Server started");
   //pinMode(ledPin, OUTPUT);
 }
 
+//Moves servomotor to activate the remote control
 void takePhotoMechanical() {
   for (int i = 0 ; i < 3; i++) {
     myservo.write(20);
@@ -65,6 +62,7 @@ void takePhotoMechanical() {
   }
 }
 
+//Sends infrared signal to the LED
 void takePhotoLight() {
   digitalWrite(LED_BUILTIN, HIGH);
   for (i = 0; i < 76; i++) {
@@ -111,18 +109,17 @@ void loop () {
     Serial.println("Client connected");
     if (client.connected()) {
       Serial.println("client is connected");
-      //digitalWrite(ledPin, LOW);  // to show the communication only (inverted logic)
       String request = client.readStringUntil('\r');    // receives the message from the client
       Serial.print("From client: ");
       Serial.println(request);
 
       int val;
-      if (request.indexOf("/takephoto/1") != -1) {
+      //filter the client request
+      if (request.indexOf("/takephoto/1") != -1) { 
         int j = 0;
-        for ( j = 0; j < 10 ; j++) {
+        for ( j = 0; j < 10 ; j++) { // send multiple signal 
           takePhotoLight();
         }
-        //takePhotoMechanical();
         Serial.println("taking photo");
       } else {
         Serial.print("invalid request: ");
